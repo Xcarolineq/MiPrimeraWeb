@@ -1,7 +1,6 @@
-# MiPrimeraWeb
 # 🌐 Mi primera web
 
-¡Bienvenidos a la **Actividad Clase 02**! 👋
+¡Bienvenidos a la **Actividad de la Clase 02**! 👋
 
 En esta actividad crearemos una página web sencilla utilizando **HTML y CSS**, trabajaremos con **Git** desde la terminal y utilizaremos **GitHub** para guardar nuestro proyecto.
 
@@ -137,11 +136,116 @@ Luego entra a tu repositorio en GitHub y comprueba que tus cambios aparezcan cor
 
 ---
 
-# 🧠 Chuleta Git
+## 🌎 Paso 5 · Pasar nuestra web a producción con GitHub Pages
 
-Si te pierdes durante la actividad, estos son los comandos que probablemente necesitas:
+¡Nuestra web ya está lista! 🎉
 
-```bash
+Hasta ahora hemos trabajado con los archivos en nuestro computador y los hemos subido al repositorio.
+
+Ahora vamos a hacer que nuestra página quede **publicada en Internet** utilizando **GitHub Pages**.
+
+> 💡 GitHub Pages permite publicar sitios web directamente desde un repositorio de GitHub.
+
+---
+
+### 1. Comprueba que tus cambios estén en GitHub
+
+Antes de publicar, asegúrate de haber realizado:
+
+```bash id="r9xjcy"
+git status
+git add .
+git commit -m "Web lista para publicar"
+git push origin main
+```
+
+Luego entra a tu repositorio en GitHub y comprueba que tus archivos estén ahí.
+
+📌 **Importante:** Tu página principal debe llamarse:
+
+```text id="c9m4m7"
+index.html
+```
+
+---
+
+### 2. Entra a la configuración del repositorio
+
+Dentro de tu repositorio en GitHub:
+
+**Settings → Pages**
+
+Busca la sección:
+
+**Build and deployment**
+
+---
+
+### 3. Configura GitHub Pages
+
+En **Source**, selecciona:
+
+```text id="3kpd3j"
+Deploy from a branch
+```
+
+Luego configura:
+
+```text id="3gs3j7"
+Branch: main
+Folder: / (root)
+```
+
+Finalmente, haz clic en:
+
+**Save**
+
+---
+
+### 4. Espera a que GitHub publique tu web ⏳
+
+GitHub comenzará a preparar tu página.
+
+Este proceso puede tardar algunos minutos.
+
+Puedes volver a:
+
+**Settings → Pages**
+
+Cuando la publicación esté lista, GitHub mostrará un mensaje indicando que tu sitio está publicado.
+
+Tu dirección tendrá una estructura similar a:
+
+```text id="6o3xj1"
+https://usuario.github.io/mi-primera-web/
+```
+
+🎉 **¡Tu primera página web está en Internet!**
+
+---
+
+### 🔄 ¿Qué pasa si modifico mi web?
+
+Una vez configurado GitHub Pages, **no necesitas volver a realizar la configuración**.
+
+Simplemente modifica tu proyecto y vuelve a subir los cambios:
+
+```bash id="opng67"
+git status
+git add .
+git commit -m "Actualiza la web"
+git push origin main
+```
+
+GitHub Pages detectará los nuevos cambios y actualizará automáticamente el sitio publicado.
+
+> 💡 La actualización puede tardar unos minutos en aparecer.
+
+---
+
+## 🧠 Chuleta Git
+
+```bash id="37twfm"
 # Ver archivos y carpetas
 ls
 
@@ -151,38 +255,28 @@ cd nombre-carpeta
 # Volver atrás
 cd ..
 
-# Clonar un repositorio
+# Clonar el repositorio
 git clone "enlace-del-github"
 
-# Revisar cambios
+# Revisar los cambios
 git status
 
-# Preparar todos los cambios
+# Preparar los cambios
 git add .
 
 # Crear un commit
 git commit -m "mensaje"
 
-# Subir cambios a GitHub
+# Subir los cambios a GitHub
 git push origin main
 ```
 
 ---
 
-## 🎯 Objetivo de la actividad
+## 🎯 ¡Actividad completada!
 
-Al finalizar esta actividad deberías haber logrado:
+Al finalizar esta actividad habrás realizado un flujo completo:
 
-* Crear un **Fork** de un repositorio.
-* Clonar un proyecto desde GitHub.
-* Navegar entre carpetas utilizando la terminal.
-* Modificar archivos de una página web.
-* Utilizar comandos básicos de Git.
-* Crear un commit.
-* Subir tus cambios a GitHub.
+**GitHub → Fork → Clone → Código → Commit → Push → GitHub Pages → 🌎 Web publicada**
 
----
-
-> 💡 **No necesitas memorizar todos los comandos.**
->
-> La idea de esta actividad es comenzar a familiarizarte con Git, GitHub y la terminal. Si algo sale mal, revisa las pistas, pregunta y vuelve a intentarlo. 🚀
+Y tendrás una URL que podrás abrir desde cualquier navegador y compartir con otras personas. 🚀
