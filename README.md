@@ -146,9 +146,6 @@ git config --global user.email "tu-correo@ejemplo.com"
 Para evitar que tus credenciales se queden guardadas en el computador y afecten a otros proyectos, es recomendable eliminar la configuración global y configurar tu identidad **solo para este repositorio actual**:
 
 ```bash
-# Eliminar la configuración global (si ya la habías guardado)
-git config --global --unset user.name
-git config --global --unset user.email
 
 # Configurar tu identidad únicamente en este repositorio (local)
 git config user.name "Tu Nombre de Usuario"
