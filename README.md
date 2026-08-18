@@ -126,7 +126,40 @@ git commit -m "Agrega estructura inicial de la web"
 
 💡 El mensaje debería explicar brevemente **qué cambio realizaste**.
 
+### 👤 Configuración de identidad (¡Importante!)
+
+Antes de registrar tus cambios, Git necesita saber quién eres. Si no lo has hecho antes, el sistema te pedirá configurar tu correo y nombre de usuario. 
+
+Puedes consultar tu configuración actual o establecerla de forma global con los siguientes comandos:
+
+```bash
+# Consultar configuración actual
+git config --global user.name
+git config --global user.email
+
+# Configurar tu identidad de forma global
+git config --global user.name "Tu Nombre de Usuario"
+git config --global user.email "tu-correo@ejemplo.com"
+```
+
+⚠️ **Si usas un computador compartido:**
+Para evitar que tus credenciales se queden guardadas en el computador y afecten a otros proyectos, es recomendable eliminar la configuración global y configurar tu identidad **solo para este repositorio actual**:
+
+```bash
+# Eliminar la configuración global (si ya la habías guardado)
+git config --global --unset user.name
+git config --global --unset user.email
+
+# Configurar tu identidad únicamente en este repositorio (local)
+git config user.name "Tu Nombre de Usuario"
+git config user.email "tu-correo@ejemplo.com"
+```
+
+---
+
 ### 3. Subir los cambios
+
+> 🔑 **Autenticación en GitHub:** Antes de enviar el `git push`, el sistema te pedirá iniciar sesión y autenticarte en tu cuenta de GitHub (por ejemplo, a través de una ventana emergente en el navegador o solicitando un token de acceso). Sigue los pasos indicados para autorizar el acceso.
 
 ```bash
 git push origin main
